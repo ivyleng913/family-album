@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f3ea;
+  color: #3b2f2f;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.8;
+}
+
+.hero {
+  min-height: 90vh;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(248, 243, 234, 0.78), rgba(248, 243, 234, 0.95)),
+    url("images/photo1.png") center/cover no-repeat;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.eyebrow {
+  color: #b88945;
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  font-size: 21px;
+  color: #5f5148;
+}
+
+.intro,
+.letter {
+  max-width: 780px;
+  margin: 90px auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 34px;
+  margin-bottom: 22px;
+}
+
+.intro p,
+.letter p {
+  font-size: 18px;
+  color: #62544b;
+}
+
+.gallery {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.photo-card {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+  padding: 36px;
+  border-radius: 30px;
+  background: #fffaf3;
+  box-shadow: 0 22px 60px rgba(80, 55, 30, 0.09);
+}
+
+.photo-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.photo-card img {
+  width: 46%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.photo-text {
+  flex: 1;
+}
+
+.photo-text .date {
+  color: #b88945;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.photo-text h3 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.photo-text p {
+  font-size: 17px;
+  color: #68584f;
+}
+
+.sign {
+  margin-top: 28px;
+  color: #b88945 !important;
+}
+
+footer {
+  padding: 48px 20px;
+  text-align: center;
+  color: #9a8b7f;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 82vh;
+    padding: 60px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .gallery {
+    width: 90%;
+    gap: 48px;
+  }
+
+  .photo-card,
+  .photo-card.reverse {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .photo-card img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .photo-text h3 {
+    font-size: 25px;
+  }
+}
