@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m http.server 8080)",
+      "Bash(pkill *)",
+      "Bash(awk '{printf \"mv \\\\\"%s\\\\\" \\\\\"temp_photo_%04d.png\\\\\"\\\\n\", $0, NR-1}')",
+      "Bash(sh)",
+      "Bash(mv photo1.png _old_photo1.png)",
+      "Bash(mv photo2.png _old_photo2.png)",
+      "Bash(mv photo3.png _old_photo3.png)",
+      "Bash(mv _old_photo1.png temp_photo_0040.png)",
+      "Bash(mv _old_photo2.png temp_photo_0041.png)"
+    ]
+  }
+}
